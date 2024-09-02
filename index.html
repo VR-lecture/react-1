@@ -3,7 +3,18 @@
 <body>
   <div id="app"></div>
   <script type="text/javascript">
-    // ここにJavaScriptコードを書く
+    // htmlのdivタグ要素を取得する
+    const app = document.getElementById("app");
+    // h1要素を作る
+    const header = document.createElement("h1");
+    // h1要素の中に入れるテキスト
+    const text = "鍵鯖Webレクチャー";
+    const headerContent = document.createTextNode(text);
+
+    // h1要素の中にテキストを入れる
+    header.appendChild(headerContent)
+    // h1要素をdivタグに入れる
+    app.appendChild(header);
   </script>
 </body>
 
